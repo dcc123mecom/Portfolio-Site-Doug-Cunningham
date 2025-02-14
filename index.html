@@ -1,5 +1,13 @@
 <!DOCTYPE HTML>
 <head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"> 
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+
+
+
+
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 <html lang= "en"><head>
 	<meta charset="UTF-8"
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,19 +17,31 @@
 </head>
 <body>
 	<!-- For the header -->
-	<header>
+		<header>
+			<div class="container">
+			  <img src="img/aboutimgs/DC UE Logo.png" alt="Logo" />
+			  <nav>
+				<ul class="navigation">
+				</ul>
+				</nav>
+				</div>
+	
 		<!-- For the navigation -->
 		<div>
-			<a href="Doug Cunningham"> <img src="img/aboutimgs/dclogo.png" alt="Doug Cunningham"> </a>
+			
 			<nav>
-				<ul><li><a href="index.html">Work</a></li>
-					<li><a href="about.html">All about Me</a></li>
-					<li><a href="#contact">Contact</a></li>
+				<ul>
+					<a href="index.html" class="button">Home</a>
+					<a href="projects.html" class="button">Projects</a>
+					<a href="about.html" class="button"> About Me</a>
+					<a href="contact" class="button">Contact</a>
 				</ul>
 				
 			</nav>
 		</div>
-	</header><!--Header-->
+	</header>
+	<!--Header-->
+
 	<main>
 		<!--Hero-->
 		<div>
@@ -32,37 +52,25 @@
 			</p>
 		</div>
 		<!--Work-->
-		<divz>
-				<h1>My Work</h1>
-				<img src="img/mtiimgs/mtijobreportleft600.png" media= "(max-width:767px)" alt="MTI Mobiel Field Services App">
-				<p> MTI Corp Field Services Mobile App.
-					This is a design for the MTI Field Technicians use MTI techs are dispatched to large retailers for 
-					installation of floor demonstration products such as 
-					flat screen televisions sound hardware and or many other products. 
-					The field techs needed a replacement for the Salesforce mobile app as MTI had decided to not renew the Salesforce contract. 
-					This app was developed to replace it. </p>
-					<a href="View Project">View Project</a>
-					<br>
-					<br>
-					<br>
-					<br>
-					
-		</divz>
+		<div id="work">
+			<div class="container">
+			  <h2>My Work</h2>
+				<div class="row">
+		</div>
+				
+				<img src="img/mtiimgs/mtijobreportleft300.png" media= "(max-width:767px)" alt="MTI Mobiel Field Services App">
+				 <h2>MTI Corp Field Services Mobile App.</h2>
+				
+				
 		<div>
-			<img src="img/facemodimgs/Faec Mod splash screen-left 600.png" alt="FaceMod Image" >
-			<h2> "FaceMod Mobile App </h2>
-			<p> FaceMod mobile app is a design that was developed to allow for the application of FX makeup. 
-				This was a design that was created out of user frustrations with current offerings, 
-				such as Youtube. The main areas that the mobile app addressed were being able to see what your face would
-				 look like prior to applying make up. This is done through an AR Camera component. 
-				Secondly detailed instructions were heavily requested during user research.</p>
+			<img src="img/facemodimgs/Faec Mod splash screen-left300.png" alt="FaceMod Image" >
+			<h2> FaceMod Mobile App </h2>
+			
 		</div>
 		<div>
 			<img src="img/fff app/FFF SEO grab.png" alt="Find Frineds For SEO ">
-			<h2> "Find Friends For Mobile App </h2>
-			<p> The Find Friends For Mobile app is an app that I developed. The Mobile app Find Friends For is the complete platform for meeting new people and making friends through small group activities! The app allows for the creation, publishing, and joining of activities for small groups of people. In our research we have found that making new friends for adults is difficult. Our app allows for people to be able to meet for a nice game and then form bonds that lead to friendships from those shared experiences. </p>
-			<img src="img/fff app/ffflogo.jpeg" alt="Find Friends For Logo">
-			<a href="https://findfriendsfor.com" target="_blank">https://findfriendsfor.com</a>
+			<h2> Find Friends For Mobile App </h2>
+			
 		</div>
 	</main>
 
@@ -71,30 +79,15 @@
 		<div></div>
 	</div>
 
-	<!-- For your work/projects -->
-	<div>
-		<div><div><!-- open row that holds (2) columns for project -->
-			<div><!-- open first column (used for image) -->
-			  <picture>
-				<source srcset="http://via.placeholder.com/600x400" media="(max-width:767px)">
-				<img src="http://via.placeholder.com/1200x800" alt="My Image">
-			  </picture>
-			</div><!-- end first column -->
-			<div><!-- open second column (used for text) -->
-			  <h3>Project name</h3><!-- heading for the project -->
-			  <p><!-- open paragraph -->
-				Write a line or 2 of text as a short project introduction.
-			  </p><!-- end paragraph -->
-			  <p><!-- open paragraph -->
-				Write a line or 2 mentioning skills used (optional).
-			  </p><!-- end paragraph -->
-			  <a href="">Read more</a><!-- button or link label -->
-			</div><!-- end second column -->
-		  </div><!-- end row that holds (2) columns for project --></div>
-	</div>
+	
 
 	<!-- For the footer  -->
+
+		
 	<footer id="Contact">
+		<div class="container">
+			<h2></h2>
+		  </div>
 		</footer>
 		<a href="#contact">Contact</a>
 		<!--Get In Touch-->
@@ -102,7 +95,7 @@
 			<h2>Let's Have a Chat About It!</h2>
 			<p>I appreciate you taking the time to check out my info and work, and if you're interested you can reach me through the links listed below. I look forward to chatting with you!</p>
 			<a href="tel:+18137051638">Call Me</a> or, 
-			<a href="mailto:dcc123@me.com">Send Me An Email</a>
+			<a href="mailto:dcc123@me.com" class="button">Send Me An Email</a>
 			<img src="img/aboutimgs/201205_facebook_social network_connections_connection_face book_icon.png" alt="Facebook">
 			
 		</div>
@@ -112,6 +105,7 @@
 		
 	
 	</body></html>
+
 		<div></div>
 
 
