@@ -5,7 +5,7 @@
   }
 
 body {
-    background-color: lightgrey ;
+    background-color: rgba(211, 211, 211, 0.615) ;
     font-family: 'Open Sans' , sans-serif;
     font-size: 16px; /* Sets the font size to 16px */
     font-weight: 300; /* Sets the font weight to 300 */
@@ -36,11 +36,11 @@ body {
     
 }
 a {
-    color: #ff7f50;
+    color: #faf7f5;
     text-decoration: none; /* No underlining */
   }
   a:visited { /* visited link */
-    color: #7c0fa7;
+    color: #f8e914;
   }
   a:hover {
     color: #2558f1;
@@ -57,7 +57,7 @@ a:focus {
 
 .button {
     display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
-    background-color: #63a9ea;
+    background-color: #0b0c0c;
     color: #ffffff; /* needed to override the default link color */
     font-weight: 400;
     padding: 10px;
@@ -73,6 +73,15 @@ a:focus {
   .row {
     margin: 25px 0; /* 25px top and bottom, 0 left and right */
   }
+
+  #hero {
+    background-color: #ffe4c4;
+    padding: 20px 0;
+    display: inline-block;
+    width: 100%;
+  }
+
+ 
 /* Colors Used:
 (White) : FFFFF White
 (Blue) : 6666FF Blue
