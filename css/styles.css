@@ -63,7 +63,11 @@ a:focus {
     padding: 10px;
     border-radius: 5px;
     border-bottom: 2px solid #050201; /* width of the border, type, color */
-    transition: 0.2s opacity;
+    transition-duration: 0.2s;
+    transition-property: 0.2s opacity;
+}
+  .button:hover {
+    opacity: 0.8;
   }
   /*Layout Styling*/
   .container {
@@ -77,10 +81,75 @@ a:focus {
   #hero {
     background-color: #ffe4c4;
     padding: 20px 0;
-    display: inline-block;
+    display: block;
     width: 100%;
+    text-align: unset;
   }
 
+  /* ============================
+  Small Devices (480px and larger)
+  ===============================*/
+  @media only screen and (min-width: 480px) { 
+    header { 
+        text-align: unset;
+        padding: 20px 0 13px;
+        nav {
+            width: auto;
+            float: right;
+            margin-top: 4px;
+          }
+    }
+  }
+/* ==============================
+Medium devices (640px and larger)
+================================= */
+@media only screen and (min-width: 640px) {
+    header {
+      text-align: unset;
+      padding: 20px 0 13px;
+    }
+  
+    nav {
+      width: auto;
+      float: right;
+      margin-top: 4px;
+    }
+  }
+  /* ==============================
+Large devices (1024px or larger)
+================================= */
+@media only screen and (min-width: 1024px) {
+    header {
+        text-align: unset;
+        padding: 20px 0 13px;
+      }
+    
+      nav {
+        width: auto;
+        float: right;
+        margin-top: 4px;
+      }
+}
+/* ==============================
+X-large devices (1440px or larger)
+================================= */
+@media only screen and (min-width: 1440px) {
+    header {
+        text-align: unset;
+        padding: 20px 0 13px;
+      }
+    
+      nav {
+        width: auto;
+        float: right;
+        margin-top: 4px;
+      }
+      .container {
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+}
  
 /* Colors Used:
 (White) : FFFFF White
