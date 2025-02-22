@@ -1,136 +1,132 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
+<html lang="en">
+
+
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"> 
-	<link rel="stylesheet" type="text/css" href="css/styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Doug Cunningham UX Specialist</title>
+
+    <link rel="icon" sizes="32x32" href="img/aboutimgs/dceulogo.png">
+
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-<html lang= "en">
-  
-<head>
-	<meta charset="UTF-8"
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <script src="https://kit.fontawesome.com/4eef3ccd6d.js" crossorigin="anonymous"></script>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="Short description including keywords related to the pages content for SEO purposes">
-	<title>Doug Cunningham UX Specialist</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/7224bec99d.js" crossorigin="anonymous"></script>
+
 </head>
-<header>
-    <div class="container">
-        <header>
-            <div class="container">
-              <img src="img/aboutimgs/dceulogo.png" alt="Logo" />
-              <h2>My Work</h2>
-             <nav>
-                <ul class="navigation">
-                </ul>
-                </nav>
-                <a href="index.html" class="button">Home</a>
-                <a href="about.html" class="button"> About Me</a>
-                <a href="projects.html" class="button">Projects</a>
-                <a href="contact.html" class="button">Contact</a>
-                <a href="animation.html" class="button">Animation image</a>
-                <footer id="Contact">
-                </footer></div>
-
-                <div id="work">
-                    <div class="container">
-                     
-                        <div class="row"> 
-                
-                            <div class= "col-sm-12 col-md-6 col-lg-7">
-                            <!-- open row that holds (2) columns for project -->
-                    <div><!-- open first column (used for image) -->
-                      <div class= "col-sm-12 col-md-6 col-lg-5">
-                      <picture>
-                        <source srcset="http://FFF SEO grab.png.com" media="(max-width:767px)">
-                        <h3>Find Friends For</h3><!-- heading for the project -->
-                        <img src="img/fff app/FFF SEO grab.png" alt="Find Friends For SEO">
-                        <img src="img/fff app/ffflogo.jpeg" alt="Find Friends For Logo">
-                      </picture>
-                    </div><!-- end first column -->
-                    <div><!-- open second column (used for text) -->
-                     
-                      <p><!-- open paragraph -->
-                        I directed a team of developers and designers to complete this mobile app. The Mobile app Find Friends For is the complete platform for meeting new people and making friends through small group activities! The app allows for the creation, publishing, and joining of activities for small groups of people. In our research we have found that making new friends for adults is difficult. Our app allows for people to be able to meet for a nice game and then form bonds that lead to friendships from those shared experiences.
-                      </p><!-- end paragraph -->
-                      <p><!-- open paragraph -->
-                        
-                        
-                        
-                        <a href="https://findfriendsfor.com" class="button"> https://findfriendsfor.com</a> 
-                      </p><!-- end paragraph -->
-                      <a href="fffmoreinfo.html" class="button">More Info</a><!-- button or link label -->
-                    </div><!-- end second column -->
-                  </div><!-- end row that holds (2) columns for project -->
 
 
-                  <div>  <div class="row"> 
-                
-                    <div class= "col-sm-12 col-md-6 col-lg-7"></div><!-- open row that holds (2) columns for project -->
-                    <div><!-- open first column (used for image) -->
-                      <picture>
-                        <h3>FaceMod</h3><!-- heading for the project -->
-                        <source srcset="Faec Mod splash screen-left300.png.com" media="(max-width:767px)">
-                        <img src="img/facemodimgs/facemodsplashscreenleft300.png" alt="FaceMod Image"> <img src="img/facemodimgs/facemodinstructionsleft600.png">
-                      </picture>
-                    </div><!-- end first column -->
-                    <div> <div class="row"> 
-                
-                      <div class= "col-sm-12 col-md-6 col-lg-7"> <!-- open second column (used for text) -->
+<body>
+
+    <header id="navigation">
+        <div class="container clear">
+            <div class="navtoggle" id="myNavtoggle">
+            <img
+                class="logo"
+                src="img/aboutimgs/dceulogo.png"
+                alt="Doug Cunningham logo">
+            <div class="menu">
+                <nav>
+                    <ul class="navigation">
+                        <li><a href="index.html">Main</a></li>
+                        <li><a href="About.html">About</a></li>
+                        <li><a href= "projects.html">Projects</a></li><li><a href="#contact">Contact</a></li>
+						
+                        <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
+                    </ul>
+                </nav>  
+            </div>  
+            </div>
+        </div>
+    </header>
+
+    <div id="work">
+      <div class="container">
+          <h2>My work</h2>
+              <div class="row">
+                  <div class="column col-md-6 col-lg-5">
+                      <img src="img/fff app/fffscreengrab.png" alt="Find Friends For"> 
+                  </div>
+                  <div class="column col-md-4 col-lg-5">
+                      <h3>Find Friends For</h3>
+                      <p>  I directed a team of developers and designers to complete this mobile app. The Mobile app Find Friends For is the complete platform for meeting new people and making friends through small group activities! The app allows for the creation, publishing, and joining of activities for small groups of people. In our research we have found that making new friends for adults is difficult. Our app allows for people to be able to meet for a nice game and then form bonds that lead to friendships from those shared experiences.</p>
+                      <a href="fffmoreinfo.html" class="button">View app Info</a><a href="https://findfriendsfor.com" class="button"> https://findfriendsfor.com</a> 
+                  </div>
+              </div>
+                        
+                        
+                      <!-- end paragraph -->
                       
-                      <p><!-- open paragraph -->
-                        FaceMod mobile app is a design that was developed to allow for the application of FX makeup. 
-        This was a design that was created out of user frustrations with current offerings, 
-        such as Youtube. The main areas that the mobile app addressed were being able to see what your face would
-         look like prior to applying make up. This is done through an AR Camera component. 
-        Secondly detailed instructions were heavily requested during user research
-                      </p><!-- end paragraph -->
-                      <p><!-- open paragraph -->
-                        This design was done as a trial to see if it was viable.
-                       
-                      </p><!-- end paragraph -->
-                      <a href="facemodmoreinfo.html" class="button">More Info</a><!-- button or link label -->
                     </div><!-- end second column -->
                   </div><!-- end row that holds (2) columns for project -->
+
+
+                  <div id="work2">
+                    <div class="container">
+                       
+                            <div class="row">
+                                <div class="column col-md-6 col-lg-5">
+                                    <img src="img/facemodimgs/facemodsplashscreenleft600.png" alt="Facemod"> 
+                                </div>
+                                <div class="column col-md-4 col-lg-5">
+                                    <h3>FaceMod</h3>
+                                    <p>   FaceMod mobile app is a design that was developed to allow for the application of FX makeup. 
+                                      This was a design that was created out of user frustrations with current offerings, 
+                                      such as Youtube. The main areas that the mobile app addressed were being able to see what your face would
+                                       look like prior to applying make up. This is done through an AR Camera component. 
+                                      Secondly detailed instructions were heavily requested during user research. This design was done as a trial to see if it was viable..</p>
+                                    <a href="task66thestory.pdf" class="button">View Build Story</a>
+                                </div>
+                            </div>
+                       
+                    
     
 <div>
     
-    <div> <div class="row"> 
-                
-      <div class= "col-sm-12 col-md-6 col-lg-7">
-        </div><!-- open row that holds (2) columns for project -->
-        <div><!-- open first column (used for image) -->
-          <picture>
-            <h3>MTI Mobiel Field Services app</h3><!-- heading for the project -->
-            <source srcset="mtijobreportleft300.png.com" media="(max-width:767px)">
-            <img src="img/mtiimgs/mtijobreportleft300.png" alt="MTI Mobiel Field services App"> <img src="img/mtiimgs/mtiscreenleft.png">
-          </picture>
-        </div><!-- end first column -->
-        <div><!-- open second column (used for text) -->
-          
-          <p><!-- open paragraph -->
-            This is a design for the MTI Field Technicians use MTI techs are dispatched to large retailers for 
-					installation of floor demonstration products such as 
-					flat screen televisions sound hardware and or many other products. 
-					The field techs needed a replacement for the Salesforce mobile app as MTI had decided to not renew the Salesforce contract. 
-					This app was developed to replace it.
-          </p><!-- end paragraph -->
-          <p><!-- open paragraph -->
-            This design was done as a POC to test against other solutions.
-           
-          </p><!-- end paragraph -->
-          <a href="mtimoreinfo.html" class="button">More Info</a> <!-- button or link label -->
-        </div><!-- end second column -->
-      </div><!-- end row that holds (2) columns for project -->
-				
-                    <div>
-                    </div>
-
-                   
-</div>
-<script src="js/scripts.js file"></script>
-
-</div></div></div></div></div></div></div></div></header></div></header></html>
-</head>
+  <div id="work3">
+    <div class="container">
+       
+            <div class="row">
+                <div class="column col-md-6 col-lg-5">
+                    <img src="img/mtiimgs/mtiscreenleft600.png" alt="MTI Mobile"> 
+                </div>
+                <div class="column col-md-4 col-lg-5">
+                    <h3>MTI Field Technicians Mobile App</h3>
+                    <p> This is a design for the MTI Field Technicians use MTI techs are dispatched to large retailers for 
+                      installation of floor demonstration products such as 
+                      flat screen televisions sound hardware and or many other products. 
+                      The field techs needed a replacement for the Salesforce mobile app as MTI had decided to not renew the Salesforce contract. 
+                      This app was developed to replace it. This design was done as a POC to test against other solutions.</p>
+                    <a href="businessplanmti.pdf" class="button">View Business Plan</a>
+                </div>
+            </div>
+            
+            <footer id="contact">
+              <div class="container">
+                  <h2>Let's have a chat</h2>
+                  <p>Please contact me if you have any questions</p>
+      
+                  <div class="row"> <a href="mailto:dcc123@me.com" class="button-contact">Email me</a> <a href="tel:+18137051638" class="button">Call Me </a></div>
+      
+                  <div class="social-icon">
+                      <a href="https://www.linkedin.com/in/doug-cunningham-23482a2a9/" target="_blank">
+                          <img src="img/aboutimgs/LinkedinProfile.png" alt="Logo Linkedin">
+                      </a>
+      
+                  </div>
+      
+                  <div class="copyright">Copyright Doug Cunningham 2025</div>
+      
+              </div>
+              
+          </footer>
+      
+          <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+          <script src="js/scripts.js"></script>
+</div></div></div></div></div></body></html>

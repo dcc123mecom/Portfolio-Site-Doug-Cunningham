@@ -1,16 +1,32 @@
-
+/*
+Colors used:
+Background Color (Light grey): #FEFEFE;
+Primary Color (Dark Blue): #00283F;
+Secondary Color (Blue): #3A94A3;
+Hightlight Color-1 (Blue green): #00A698
+Hightlight Color-2 (Orange): #FF5F28
+*/
 
 * {
-    box-sizing: border-box;
-  }
+  box-sizing: border-box;
+}
+
+header {
+  background-color: #FEFEFE;
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
 
 body {
-    background-color: rgba(243, 228, 228, 0.735) ;
-    font-family: 'Open Sans' , sans-serif;
-    font-size: 16px; /* Sets the font size to 16px */
-    font-weight: 300; /* Sets the font weight to 300 */
-    line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
-    color: #000000;
+    background-color: #FEFEFE;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.6;
+    color: #00283F;
   }
   
   h1, h2, h3, h4 {
@@ -23,171 +39,513 @@ body {
   
   h2 {
     font-size: 2.25em;
-    font-weight: 700;
+    font-weight: 600;
   }
   
   h3 {
     font-size: 1.75em;
-    font-weight: 400;
+    font-weight: 500;
   }
   h4 {
     font-size: 1.35em;
     font-weight: 400;
-    
-}
-a {
-    color: #faf7f5;
-    text-decoration: none; /* No underlining */
   }
-  a:visited { /* visited link */
-    color: #f8e914;
-  }
-  a:hover {
-    color: #2558f1;
-    text-decoration: underline; /* Underlining when hovering over a link */
-  }
-  a:active { /* selected link */
-    color: #cc4210;
-  }
-  a:hover,
-a:focus {
-  color: #e1f227;
-  text-decoration: underline;
-}
 
-.button {
-    display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
-    background-color: #192121;
-    color: #ffffff; /* needed to override the default link color */
-    font-weight: 400;
-    padding: 10px;
-    border-radius: 5px;
-    border-bottom: 2px solid #050201; /* width of the border, type, color */
-    transition-duration: 0.2s;
-    transition-property: 0.2s opacity;
-}
-  .button:hover {
-    opacity: 0.8;
+
+  img {
+    width: 100%;
   }
-  /*Layout Styling*/
-  .container {
-    padding: 0 15px;
+
+  #project-title img {
+    max-width: 100%;
+    width: 800px;
+    display: block;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    float: right;
   }
-  
-  .row {
-    margin: 25px 0; /* 25px top and bottom, 0 left and right */
+
+  #project-usability img {
+    max-width: 100%;
+    width: 600px;
+    display: block;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: 0px auto;
   }
-  .row::after {
-    content: "";
+
+  #project-overviewproblem img {
+    max-width: 100%;
+    width: 300px;
+    display: block;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: 0px auto;
+  }
+
+  #project-competitive-analysis img {
+    max-width: 100%;
+    width: 300px;
+    display: block;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: 0px auto;
+  }
+
+  #project-impact a img {
+    max-width: 100%;
+    width: 300px;
+    display: block;
+    padding-top: 20px;
+    padding-bottom: 60px;
+    margin: 0px auto;
+  }
+
+  .logo {
+    max-width: 150px;
+  }
+
+  .clear:after {
     clear: both;
     display: table;
-  }
+    line-height: 0;
+    content: "";
+}
 
-  #hero {
-    background-color: #ffe4c4;
-    padding: 20px 0;
+
+
+  .social-icon {
     display: block;
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 10px;
+  }
+
+  .social-icon a {
+    display: inline-block;
+    width: 30px;
+    text-align: center;
+    margin: 0px 5px;
+  }
+
+  .animation {
     width: 100%;
-    text-align: unset;
+    max-width: 100%;
+    height: auto;
   }
 
-  /* ============================
-  Small Devices (480px and larger)
-  ===============================*/
-  @media only screen and (min-width: 480px) { 
-    header { 
-        text-align: unset;
-        padding: 20px 0 13px;
-        nav {
-            width: auto;
-            float: right;
-            margin-top: 4px;
-          }
-    }
-  }
-/* ==============================
-Medium devices (640px and larger)
-================================= */
-@media only screen and (min-width: 640px) {
-    header {
-      text-align: unset;
-      padding: 20px 0 13px;
-    }
-  
-    nav {
-      width: auto;
-      float: right;
-      margin-top: 4px;
-    }
-  }
-  /* ==============================
-Large devices (1024px or larger)
-================================= */
-@media only screen and (min-width: 1024px) {
-    header {
-        text-align: unset;
-        padding: 20px 0 13px;
-      }
-    
-      nav {
-        width: auto;
-        float: right;
-        margin-top: 4px;
-      }
-}
-/* ==============================
-X-large devices (1440px or larger)
-================================= */
-@media only screen and (min-width: 1440px) {
-    header {
-        text-align: unset;
-        padding: 20px 0 13px;
-      }
-    
-      nav {
-        width: auto;
-        float: right;
-        margin-top: 4px;
-      }
-      .container {
-        max-width: 1200px;
-        margin-left: auto;
-        margin-right: auto;
-      }
-}
-.sun {
-  animation: 4s color-change infinite alternate linear;
-}
-@keyframes identifier {
-
- } @keyframes color-change {
+  @keyframes color-change {
     from {fill: #edc655;}
     to {fill: #f76414;}
   }
-  @keyframes color-change {
-    0% {fill: #edc655;}
-    50% {fill: #fcffad;}
-    100% {fill: #f76414;}
+
+  .sun {
+    animation-duration: 4s;
+    animation-name: color-change;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
   }
-  .cloud-front {
-    animation: 35s cloud-move infinite alternate linear;
-  }
+
   @keyframes cloud-move {
     from {transform: translate(0,50px);}
     to {transform: translate(200px,50px);}
   }
-  .cloud-back {
-    animation: 40s cloud-move-reverse infinite alternate linear;
+
+  .cloud-front {
+    animation-duration: 30s;
+    animation-name: cloud-move;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
   }
+
   @keyframes cloud-move-reverse {
     from {transform: translate(446px,48px);}
     to {transform: translate(100px, 48px);}
   }
 
+  .cloud-back {
+    animation: 34s cloud-move-reverse infinite alternate linear;
+  }
 
- 
-/* Colors Used:
-(White) : FFFFF White
-(Blue) : 6666FF Blue
-(Peach) FF9966
-(Black) 000000
+  #project-competitive-analysis img {
+    width: auto;
+}
+
+#project-overview img {
+  width: auto;
+}
+
+#project-prototype img {
+  width: auto;
+}
+
+#project-impact img {
+  width: auto;
+}
+
+  a {
+    color: #00283F;
+    text-decoration: underline;
+    font-weight: 600;
+  }
+
+  a:hover {
+    color: #00283F;
+    text-decoration: none;
+    font-weight: 600;
+  }
+
+  a:visited {
+    color: #00283F;
+    text-decoration: underline;
+    font-weight: 600;
+  }
+  a:active {
+    color: #00283F;
+    text-decoration: none;
+    font-weight: 600;
+  }
+
+
+  .button,
+  .button:visited {
+    display: inline-block;
+    background-color: #070808;
+    color: #FEFEFE;
+    text-decoration: none;
+    font-weight: 500;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 20px 0;
+    border-radius: 30px;
+    transition: 0.2s opacity;
+}
+
+
+.button:hover,
+.button:focus {
+    background-color: #0d0e0e;
+    text-decoration: none;
+    opacity: 0.8;
+}
+
+
+
+.button-contact,
+.button-resume,
+.button-contact:visited,
+.button-resume:visited {
+    background-color: transparent;
+    color: #faf7f6;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: 2px solid #f5efed;
+    border-radius: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    transition: .2s background-color, font-weight;
+}
+
+.button-contact:hover,
+.button-contact:focus,
+.button-resume:hover,
+.button-resume:focus {
+    background-color: #feeee8;
+    font-weight: 600;
+}
+
+.button-contact:active,
+.button-resume:active { 
+    background-color: #ff946d;
+    color: #FEFEFE;
+}
+
+
+/* Layout styling */
+
+.container {
+  padding: 0 15px;
+  max-width: 100%;
+  width: 1300px;
+  margin: 0px auto;
+}
+
+.row {
+  margin: 25px 0;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.resume {
+  text-align: center;
+  padding-top: 20px;
+}
+
+#work .row {
+  padding-bottom: 30px;
+}
+
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  margin: 0;
+}
+
+
+
+nav > ul > li > a {
+  padding: 0 15px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 700;
+  color: #00283F;
+}
+
+nav > ul > li > a:visited {
+  color: #00283F;
+}
+
+nav > ul > li > a:hover,
+nav > ul > li > a:focus {
+  color: #0f1110;
+  text-decoration: none;
+}
+
+nav > ul > li > a:active {
+  color: #191d1c;
+}
+
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 30px;
+  font-size: 30px;
+  color: #00283F;
+  padding-right: 0;
+}
+
+.navtoggle.responsive li  {
+  display: block;
+}
+
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+.navtoggle.responsive li  {
+  display: block;
+  padding: 10px 0;
+}
+
+.navtoggle.responsive li:last-child  {
+  padding: 0 0 10px;
+}
+
+main {
+  padding-top: 56px;
+}
+
+#hero {
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  margin-top: 50px;
+}
+
+#project-title,
+#about-title {
+  margin-top: 100px;
+}
+
+
+#contact {
+    background-color: #00283F;
+    color: #feeee8;
+    padding: 16px 0;
+    text-align: center;
+}
+
+#hero span {
+  color: #00283F;
+  font-weight: 400;
+  font-size: 16px;
+  display: block;
+  line-height: 1.2;
+  margin-top: -15px;
+}
+
+#hero h1 {
+  color: #0a0b0b;
+
+}
+
+#contact .copyright {
+  color: #FEFEFE;
+  font-weight: 300;
+  font-size: .8em;
+  display: block;
+  line-height: 1.2;
+  padding-top: 8px;
+  text-align: center;
+}
+
+#contact .row {
+  padding-top: 10px;
+}
+
+#my-story .row{
+  padding-bottom: 20px;
+}
+
+#skills-tools {
+  padding-bottom: 30px;
+}
+
+#project-next-steps {
+  padding-bottom: 30px;
+}
+
+
+
+/* ==============================
+Medium devices (640px and larger)
+================================= */
+@media only screen and (min-width: 640px) {
+
+  header {
+    text-align: unset;
+    padding: 20px 0 13px;
+  }
+
+  
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
+  }
+
+  main {
+    font-size: 18px;
+  }
+
+  .menu {
+    display: block;
+    width: 400px;
+    float: right;
+    margin-top: 20px;
+  }
+
+  #hero span {
+    display: block;
+  }
+
+  .col-md-4 {
+    width: 40%;
+  }
+
+  .col-md-6 {
+    width: 60%;
+  }
+
+  .col-md-5 {
+    width: 50%;
+  }
+
+
+  [class*="col-"] {
+    float: left;
+    padding: 10px;
+  }
+
+  nav > ul > li {
+    display: inline-block;
+  }
+
+  nav > ul {
+    margin: 1em 0;
+  }
+
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+
+  .navtoggle li:last-child {
+    display: none;
+  }
+  
+
+  #skills-tools h3 { margin-top: 0;}
+
+  #my-story h2 { margin-top: 0;}
+}
+
+
+
+
+/* ==============================
+Large devices (1024px or larger)
+================================= */
+@media only screen and (min-width: 1024px) {
+  header {
+    text-align: unset;
+    padding: 20px 0 13px;
+  }
+
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
+  }
+
+  main {
+    font-size: 18px;
+  }
+
+  .col-lg-6 {
+    width: 60%;
+  }
+
+  .col-lg-4 {
+    width: 40%;
+  }
+
+  .col-lg-5 {
+    width: 50%;
+  }
+
+  [class*="col-"] {
+    float: left;
+    padding: 10px;
+  }
+
+  nav > ul > li {
+    display: inline-block;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+
