@@ -12,7 +12,7 @@ Hightlight Color-2 (Orange): #FF5F28
 }
 
 header {
-  background-color: #FEFEFE;
+  background-color: #fefefe;
   padding: 10px 0;
   border-bottom: 1px solid #ddd;
   position: fixed;
@@ -21,20 +21,26 @@ header {
 }
 
 body {
-    background-color: #FEFEFE;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
-    font-weight: 300;
-    line-height: 1.6;
-    color: #00283F;
-  }
-  
-  h1, h2, h3, h4 {
-    line-height: 1.4;
-  }
-  h1 {
-    font-size: 2.75em;
-    font-weight: 700;
+  background-color: #fefefe;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.6;
+  color: #00283f;
+}
+
+{ 
+  h1,h2,h3,h4,
+}
+
+
+{
+  line-height: 1.4;
+}
+
+h1 {
+  font-size: 2.75em;
+  font-weight: 700;
   }
   
   h2 {
@@ -102,7 +108,7 @@ body {
   }
 
   .logo {
-    max-width: 150px;
+    max-width: 250px;
   }
 
   .clear:after {
